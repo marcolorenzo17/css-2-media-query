@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media query - Teléfono</title>
   <style>
-    #telefono{
+    #telefono {
       font-size: 32px;
       font-weight: bold;
       position: fixed;
     }
+
+    @media only screen and (min-width : 320px) {
+      #telefono {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 0px;
+        width: 30%;
+      }
+    }
+
+    @media only screen and (min-width : 992px) {
+      #telefono {
+        top: 0px;
+        right: 0px;
+        left: initial;
+        bottom: initial;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div id="telefono">987 65 43 21</div>
 </body>
+
 </html>
